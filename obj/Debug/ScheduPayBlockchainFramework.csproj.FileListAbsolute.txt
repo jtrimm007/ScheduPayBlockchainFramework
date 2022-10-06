@@ -26,3 +26,21 @@ F:\Glip-Glop\Dropbox (Personal)\TrimYard\Mow\ScheduPayBlockchainFramework\obj\De
 F:\Glip-Glop\Dropbox (Personal)\TrimYard\Mow\ScheduPayBlockchainFramework\obj\Debug\ScheduPayBlockchainFramework.csproj.CopyComplete
 F:\Glip-Glop\Dropbox (Personal)\TrimYard\Mow\ScheduPayBlockchainFramework\obj\Debug\ScheduPayBlockchainFramework.dll
 F:\Glip-Glop\Dropbox (Personal)\TrimYard\Mow\ScheduPayBlockchainFramework\obj\Debug\ScheduPayBlockchainFramework.pdb
+C:\ScheduPay\ScheduPayBlockchainFramework\obj\Debug\ScheduPayBlockchainFramework.dll
+C:\ScheduPay\ScheduPayBlockchainFramework\obj\Debug\ScheduPayBlockchainFramework.pdb
+C:\ScheduPay\ScheduPayBlockchainFramework\bin\Debug\ScheduPayBlockchainFramework.dll.config
+C:\ScheduPay\ScheduPayBlockchainFramework\bin\Debug\ScheduPayBlockchainFramework.dll
+C:\ScheduPay\ScheduPayBlockchainFramework\bin\Debug\ScheduPayBlockchainFramework.pdb
+C:\ScheduPay\ScheduPayBlockchainFramework\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\ScheduPay\ScheduPayBlockchainFramework\bin\Debug\MongoDB.Bson.xml
+C:\ScheduPay\ScheduPayBlockchainFramework\bin\Debug\Newtonsoft.Json.xml
+C:\ScheduPay\ScheduPayBlockchainFramework\bin\Debug\System.Buffers.xml
+C:\ScheduPay\ScheduPayBlockchainFramework\bin\Debug\System.Memory.xml
+C:\ScheduPay\ScheduPayBlockchainFramework\bin\Debug\System.Numerics.Vectors.xml
+C:\ScheduPay\ScheduPayBlockchainFramework\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\ScheduPay\ScheduPayBlockchainFramework\bin\Debug\System.Text.Encodings.Web.xml
+C:\ScheduPay\ScheduPayBlockchainFramework\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\ScheduPay\ScheduPayBlockchainFramework\bin\Debug\System.ValueTuple.xml
+C:\ScheduPay\ScheduPayBlockchainFramework\obj\Debug\ScheduPayBlockchainFramework.csproj.AssemblyReference.cache
+C:\ScheduPay\ScheduPayBlockchainFramework\obj\Debug\ScheduPayBlockchainFramework.csproj.CoreCompileInputs.cache
+C:\ScheduPay\ScheduPayBlockchainFramework\obj\Debug\ScheduPayBlockchainFramework.csproj.CopyComplete
