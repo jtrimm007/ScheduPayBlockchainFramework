@@ -26,3 +26,7 @@ F:\Glip-Glop\Dropbox (Personal)\TrimYard\Mow\ScheduPayBlockchainFramework\obj\De
 F:\Glip-Glop\Dropbox (Personal)\TrimYard\Mow\ScheduPayBlockchainFramework\obj\Debug\ScheduPayBlockchainFramework.csproj.CopyComplete
 F:\Glip-Glop\Dropbox (Personal)\TrimYard\Mow\ScheduPayBlockchainFramework\obj\Debug\ScheduPayBlockchainFramework.dll
 F:\Glip-Glop\Dropbox (Personal)\TrimYard\Mow\ScheduPayBlockchainFramework\obj\Debug\ScheduPayBlockchainFramework.pdb
+E:\ScheduPay\ScheduPayBlockchainFramework\obj\Debug\ScheduPayBlockchainFramework.csproj.AssemblyReference.cache
+E:\ScheduPay\ScheduPayBlockchainFramework\obj\Debug\ScheduPayBlockchainFramework.csproj.CoreCompileInputs.cache
+E:\ScheduPay\ScheduPayBlockchainFramework\obj\Debug\ScheduPayBlockchainFramework.dll
+E:\ScheduPay\ScheduPayBlockchainFramework\obj\Debug\ScheduPayBlockchainFramework.pdb
