@@ -1,9 +1,9 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
+using ScheduPayBlockchainFramework.Extensions;
 using ScheduPayBlockchainFramework.Models;
 using System;
 using System.Collections.Generic;
 using System.Security.Cryptography;
-using ScheduPayBlockchainFramework.Extensions;
 
 namespace ScheduPayBlockchainFramework.Blocks
 {
@@ -61,6 +61,7 @@ namespace ScheduPayBlockchainFramework.Blocks
             LastHash = lastHash;
             ServiceDetails = serviceDetails;
         }
+
         public ServiceBlock(string dateTimestamp, string lastHash, string hash)
         {
             DateTimestamp = dateTimestamp;
