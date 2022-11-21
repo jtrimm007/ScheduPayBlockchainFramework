@@ -56,6 +56,11 @@ namespace ScheduPayBlockchainFramework.Blocks
         {
             LastHash = lastHash;
         }
+        public ServiceBlock(string lastHash, ServiceDetails serviceDetails)
+        {
+            LastHash = lastHash;
+            ServiceDetails = serviceDetails;
+        }
         public ServiceBlock(string dateTimestamp, string lastHash, string hash)
         {
             DateTimestamp = dateTimestamp;
