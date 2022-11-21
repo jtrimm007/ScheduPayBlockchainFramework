@@ -44,3 +44,11 @@ C:\ScheduPay\ScheduPayBlockchainFramework\bin\Debug\System.ValueTuple.xml
 C:\ScheduPay\ScheduPayBlockchainFramework\obj\Debug\ScheduPayBlockchainFramework.csproj.AssemblyReference.cache
 C:\ScheduPay\ScheduPayBlockchainFramework\obj\Debug\ScheduPayBlockchainFramework.csproj.CoreCompileInputs.cache
 C:\ScheduPay\ScheduPayBlockchainFramework\obj\Debug\ScheduPayBlockchainFramework.csproj.CopyComplete
+E:\ScheduPay\ScheduPayBlockchainFramework\bin\Debug\ScheduPayBlockchainFramework.dll.config
+E:\ScheduPay\ScheduPayBlockchainFramework\bin\Debug\ScheduPayBlockchainFramework.dll
+E:\ScheduPay\ScheduPayBlockchainFramework\bin\Debug\ScheduPayBlockchainFramework.pdb
+E:\ScheduPay\ScheduPayBlockchainFramework\obj\Debug\ScheduPayBlockchainFramework.csproj.AssemblyReference.cache
+E:\ScheduPay\ScheduPayBlockchainFramework\obj\Debug\ScheduPayBlockchainFramework.csproj.CoreCompileInputs.cache
+E:\ScheduPay\ScheduPayBlockchainFramework\obj\Debug\ScheduPayBlockchainFramework.csproj.CopyComplete
+E:\ScheduPay\ScheduPayBlockchainFramework\obj\Debug\ScheduPayBlockchainFramework.dll
+E:\ScheduPay\ScheduPayBlockchainFramework\obj\Debug\ScheduPayBlockchainFramework.pdb
