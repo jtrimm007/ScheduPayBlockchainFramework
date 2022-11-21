@@ -3,20 +3,34 @@ using ScheduPayBlockchainFramework.Models;
 using System;
 using System.Collections.Generic;
 using System.Security.Cryptography;
+using ScheduPayBlockchainFramework.Extensions;
 
 namespace ScheduPayBlockchainFramework.Blocks
 {
     [BsonDiscriminator("ServiceBlock")]
     public class ServiceBlock : IBlock, IComparable<ServiceBlock>, IEquatable<ServiceBlock>
     {
-        public string DateTimestamp { get; set; }
-        public string LastHash { get; set; }
-        private string _hash;
-        public string Hash 
-        { 
+        public string _dateTimestamp { get; set; }
+        public string DateTimestamp
+        {
             get
             {
-                if(_hash == null)
+                if (_dateTimestamp == null)
+                {
+                    _dateTimestamp = Timestamp.UnixTimestampToday().ToString();
+                }
+                return _dateTimestamp;
+            }
+            set { _dateTimestamp = value; }
+        }
+
+        public string LastHash { get; set; }
+        private string _hash;
+        public string Hash
+        {
+            get
+            {
+                if (_hash == null)
                 {
                     int outHash;
                     var result = Int32.TryParse(LastHash, out outHash);
@@ -31,14 +45,17 @@ namespace ScheduPayBlockchainFramework.Blocks
                 return _hash;
             }
             set { _hash = value; }
-            
+
         }
         public ServiceDetails ServiceDetails { get; set; }
         public List<InvoiceDetails> Invoices { get; set; } = new List<InvoiceDetails>();
         public ServiceBlock()
         {
         }
-
+        public ServiceBlock(string lastHash)
+        {
+            LastHash = lastHash;
+        }
         public ServiceBlock(string dateTimestamp, string lastHash, string hash)
         {
             DateTimestamp = dateTimestamp;
@@ -63,7 +80,7 @@ namespace ScheduPayBlockchainFramework.Blocks
 
         public int CompareTo(ServiceBlock other)
         {
-            if(other == null) return 1;
+            if (other == null) return 1;
 
             //var testing = ParseDateTimestamp(DateTimestamp).CompareTo(ParseDateTimestamp(other.DateTimestamp));
             return double.Parse(DateTimestamp).CompareTo(double.Parse(other.DateTimestamp));
@@ -79,20 +96,20 @@ namespace ScheduPayBlockchainFramework.Blocks
         }
 
 
-        public static bool operator > (ServiceBlock serviceBlock, string dateTimestamp2)
+        public static bool operator >(ServiceBlock serviceBlock, string dateTimestamp2)
         {
             return Int64.Parse(serviceBlock.DateTimestamp).CompareTo(Int64.Parse(dateTimestamp2)) > 0;
         }
-        public static bool operator < (ServiceBlock serviceBlock, string dateTimestamp2)
+        public static bool operator <(ServiceBlock serviceBlock, string dateTimestamp2)
         {
             return Int64.Parse(serviceBlock.DateTimestamp).CompareTo(Int64.Parse(dateTimestamp2)) < 0;
         }
 
-        public static bool operator >= (ServiceBlock serviceBlock, string dateTimestamp2)
+        public static bool operator >=(ServiceBlock serviceBlock, string dateTimestamp2)
         {
             return Int64.Parse(serviceBlock.DateTimestamp).CompareTo(Int64.Parse(dateTimestamp2)) >= 0;
         }
-        public static bool operator <= (ServiceBlock serviceBlock, string dateTimestamp2)
+        public static bool operator <=(ServiceBlock serviceBlock, string dateTimestamp2)
         {
             return Int64.Parse(serviceBlock.DateTimestamp).CompareTo(Int64.Parse(dateTimestamp2)) <= 0;
         }
@@ -107,9 +124,9 @@ namespace ScheduPayBlockchainFramework.Blocks
         }
         public bool Equals(ServiceBlock other)
         {
-            if(other == null) return false;
+            if (other == null) return false;
 
-            if(this.DateTimestamp == other.DateTimestamp)
+            if (this.DateTimestamp == other.DateTimestamp)
                 return true;
             else
                 return false;
@@ -117,11 +134,11 @@ namespace ScheduPayBlockchainFramework.Blocks
 
         public override bool Equals(object obj)
         {
-            if(obj == null) return false;
+            if (obj == null) return false;
 
             ServiceBlock serviceBlock = obj as ServiceBlock;
 
-            if(serviceBlock == null) 
+            if (serviceBlock == null)
                 return false;
             else
                 return Equals(serviceBlock);
@@ -132,24 +149,24 @@ namespace ScheduPayBlockchainFramework.Blocks
             return Int32.Parse(this.Hash);
         }
 
-        public static bool operator == (ServiceBlock serviceBlock, ServiceBlock serviceBlock2)
+        public static bool operator ==(ServiceBlock serviceBlock, ServiceBlock serviceBlock2)
         {
-            if((object)serviceBlock == null || ((object)serviceBlock2) == null)
+            if ((object)serviceBlock == null || ((object)serviceBlock2) == null)
             {
                 return Object.Equals(serviceBlock, serviceBlock2);
             }
-            
+
             return serviceBlock.Equals(serviceBlock2);
         }
 
-        public static bool operator != (ServiceBlock serviceBlock, ServiceBlock serviceBlock2)
+        public static bool operator !=(ServiceBlock serviceBlock, ServiceBlock serviceBlock2)
         {
-            if((object)serviceBlock == null || ((object)serviceBlock2) == null)
+            if ((object)serviceBlock == null || ((object)serviceBlock2) == null)
             {
-                return ! Object.Equals(serviceBlock, serviceBlock2);
+                return !Object.Equals(serviceBlock, serviceBlock2);
             }
-            
-            return ! (serviceBlock.Equals(serviceBlock2));
+
+            return !(serviceBlock.Equals(serviceBlock2));
         }
     }
 }
