@@ -10,20 +10,7 @@ namespace ScheduPayBlockchainFramework.Blocks
     [BsonDiscriminator("ServiceBlock")]
     public class ServiceBlock : IBlock, IComparable<ServiceBlock>, IEquatable<ServiceBlock>
     {
-        public string _dateTimestamp { get; set; }
-        public string DateTimestamp
-        {
-            get
-            {
-                if (_dateTimestamp == null)
-                {
-                    _dateTimestamp = Timestamp.UnixTimestampToday().ToString();
-                }
-                return _dateTimestamp;
-            }
-            set { _dateTimestamp = value; }
-        }
-
+        public string DateTimestamp { get; set; }
         public string LastHash { get; set; }
         private string _hash;
         public string Hash
