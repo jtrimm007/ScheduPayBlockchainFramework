@@ -26,6 +26,9 @@ F:\Glip-Glop\Dropbox (Personal)\TrimYard\Mow\ScheduPayBlockchainFramework\obj\De
 F:\Glip-Glop\Dropbox (Personal)\TrimYard\Mow\ScheduPayBlockchainFramework\obj\Debug\ScheduPayBlockchainFramework.csproj.CopyComplete
 F:\Glip-Glop\Dropbox (Personal)\TrimYard\Mow\ScheduPayBlockchainFramework\obj\Debug\ScheduPayBlockchainFramework.dll
 F:\Glip-Glop\Dropbox (Personal)\TrimYard\Mow\ScheduPayBlockchainFramework\obj\Debug\ScheduPayBlockchainFramework.pdb
+<<<<<<< HEAD
+=======
+>>>>>>> parent of c5b86fc (update)
 E:\ScheduPay\ScheduPayBlockchainFramework\bin\Debug\ScheduPayBlockchainFramework.dll.config
 E:\ScheduPay\ScheduPayBlockchainFramework\bin\Debug\ScheduPayBlockchainFramework.dll
 E:\ScheduPay\ScheduPayBlockchainFramework\bin\Debug\ScheduPayBlockchainFramework.pdb
